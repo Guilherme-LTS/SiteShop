@@ -26,6 +26,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: -800px;
     height: 100%;
     text-rendering: optimizeLegibility;
     text-shadow: 0 0 1px transparent;
@@ -224,12 +225,32 @@ footer {
 /* Você pode ajustar os valores das media queries de acordo com suas necessidades */
 
 @media screen and (max-width: 1200px) {
+    .header-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        height: 100%;
+        text-rendering: optimizeLegibility;
+        text-shadow: 0 0 1px transparent;
+    
+    }
 
 
 }
   
 @media screen and (max-width: 992px) {
 
+    .header-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        height: 100%;
+        text-rendering: optimizeLegibility;
+        text-shadow: 0 0 1px transparent;
+    
+    }
 
 
     .grid-item img {
@@ -250,6 +271,16 @@ footer {
   
 @media screen and (max-width: 768px) {
     
+    .header-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        height: 100%;
+        text-rendering: optimizeLegibility;
+        text-shadow: 0 0 1px transparent;
+    
+    }
 
 
 
@@ -302,9 +333,11 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-left: auto;
         height: 100%;
         text-rendering: optimizeLegibility;
         text-shadow: 0 0 1px transparent;
+    
     }
 
 
@@ -314,12 +347,12 @@ footer {
     }
 
     .grid-container {
-            grid-template-columns: repeat(1, minmax(200px, 1fr)); /* altere para uma coluna em telas ainda menores */
-            gap: 15px; /* espaçamento ainda menor entre os itens da grade */
-            margin: 0 20px; /* reduza a margem nas bordas laterais */
-            width: 250px;
-            margin-right: auto;
-            margin-left: auto;            
+        grid-template-columns: repeat(1, minmax(200px, 1fr)); /* altere para duas colunas em telas menores */
+        gap: 20px; /* espaçamento menor entre os itens da grade */
+        margin: 0 20px; /* reduza a margem nas bordas laterais */
+        width: 350px;
+        margin-right: auto;
+        margin-left: auto; 
     }
     
 
@@ -378,17 +411,17 @@ footer {
 
 @media screen and (max-width: 425px) {
 
-    .grid-container {
-        grid-template-columns: repeat(1, minmax(200px, 1fr)); /* altere para uma coluna em telas ainda menores */
-        gap: 15px; /* espaçamento ainda menor entre os itens da grade */
-        margin: 0 20px; /* reduza a margem nas bordas laterais */
-        width: 200px;
-        margin-right: auto;
-        margin-left: auto;            
+    .grid-item img {
+        height: 250px; 
     }
 
-    .grid-item img {
-        height: 150px; 
+    .grid-container {
+        grid-template-columns: repeat(1, minmax(200px, 1fr)); /* altere para duas colunas em telas menores */
+        gap: 20px; /* espaçamento menor entre os itens da grade */
+        margin: 0 20px; /* reduza a margem nas bordas laterais */
+        width: 350px;
+        margin-right: auto;
+        margin-left: auto; 
     }
 
 }
